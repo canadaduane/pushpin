@@ -39,6 +39,25 @@ Open `./src/components/thread.jsx` in your preferred editor.
 You can see that the Thread code looks mostly like a simple React component. That's because it is! The Toggle component gets it state from a Hypermerge document. The document is available inside the component by creating a "handle" to the document from `hypermergeUrl` property. 
 
 
+## Pushpin URIs
+
+Pushpin establishes a `pushpin:` protocol for URIs that can be shared. Underneath the hood, a `pushpin:` URI is translated to a `hypermerge:` URI. Let's take a look at the parts:
+
+<svg class="smallmargin pagewidth" width="1052" height="64" style="background-color: #eee; padding: 10px">
+  <text class="code" x="0" y="18">
+    <tspan>pushpin://</tspan>
+    <tspan fill="#7f7fff">board/</tspan>
+    <tspan fill="#007fff">5vmhLfwX3J2332pZUtA9QWi1Pu5Dvux9E9xVYWPnnTKc</tspan>
+    <tspan>/29J</tspan>
+  </text>
+  <path stroke="#93a0b6" strokewidth="1" fill="none" d="M0.5,24 v4.5 h60 v-4.5 m0,4.5 h640 v-4.5 m0,4.5 h140 v-4.5"></path>
+  <text y="44" text-anchor="middle"><tspan x="30">protocol</tspan><tspan x="30" dy="1.2em">identifier</tspan></text>
+  <text y="44" text-anchor="middle"><tspan x="380">content type</tspan><tspan x="380" dy="1.2em">(base58)</tspan></text>
+  <text y="44" text-anchor="middle"><tspan x="670">docId</tspan><tspan x="770" dy="1.2em">(globally unique)</tspan></text>
+  <text y="44" text-anchor="middle"><tspan x="770">CRC</tspan></text>
+</svg>
+
+
 ## Hypermerge Document
 
 A Hypermerge document is a live, versioned data structure. You can read its contents, change it, and subscribe to it to hear its changes. Every change made to a Hypermerge document is captured and distributed to other instances of the document whether they are within your local document or another user's copy anywhere else in the world.
