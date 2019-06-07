@@ -43,7 +43,7 @@ You can see that the Thread code looks mostly like a simple React component. Tha
 
 Pushpin establishes a `pushpin:` protocol for URIs that can be shared. Underneath the hood, a `pushpin:` URI is translated to a `hypermerge:` URI. Let's take a look at the parts:
 
-![Pushpin URI](./docs/puspin-uri.svg)
+![Pushpin URI](./docs/pushpin-uri.svg)
 
 ## Hypermerge Document
 
