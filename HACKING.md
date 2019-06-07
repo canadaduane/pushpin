@@ -45,6 +45,8 @@ Pushpin establishes a `pushpin:` protocol for URIs that can be shared. Underneat
 
 ![Pushpin URI](./docs/pushpin-uri.svg)
 
+The content type is used to determine what React component should be used to render the document content. Meanwhile, the `docId` portion is passed on to hypermerge by prefixing its protocol, becoming: `hypermerge:/5vmhLfwX3J2332pZUtA9QWi1Pu5Dvux9E9xVYWPnnTKc`. The last portion of the pushpin URI, the "CRC" is used as a check on the preceding portion so that if anything is mistyped the app can respond immediately with suggestions to the user rather than waiting and finding out after a long, unsuccessful attempt that there are no peers sharing data about the so-called docId.
+
 ## Hypermerge Document
 
 A Hypermerge document is a live, versioned data structure. You can read its contents, change it, and subscribe to it to hear its changes. Every change made to a Hypermerge document is captured and distributed to other instances of the document whether they are within your local document or another user's copy anywhere else in the world.
