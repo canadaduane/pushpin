@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1052" height="64" style="background-color: #eee; padding: 10px">
+  <svg width="2702pt" height="1512pt"
+ viewBox="0.00 0.00 2702.15 1511.91" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1052" height="64"
+     viewBox="0 0 1052 64"
+     style="background-color: #eee; padding: 10px">
   <text class="code" x="0" y="18">
     <tspan>pushpin://</tspan>
     <tspan fill="#7f7fff">board/</tspan>
